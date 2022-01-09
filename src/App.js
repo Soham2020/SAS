@@ -4,6 +4,7 @@ import './App.css';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Header from './Components/Header';
+import Cart from './Components/Cart';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/user/register" element={<Register />} />
         <Route path="/user/header" element={<Header />} />
+        <Route path="/user/cart" element={<Cart />} />
       </Routes>
     </div>
   );

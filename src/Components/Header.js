@@ -38,7 +38,7 @@ export default function Header () {
                                     title={title}
                                     price={price}
                                     img={img}
-                                />                                
+                                />               
                             )
                         })
                     }

@@ -1,7 +1,7 @@
 import React from "react";
 import SearchIcon from '@material-ui/icons/Search';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import './Header.css'
 
 export default function Navbar(){
@@ -31,7 +31,7 @@ export default function Navbar(){
                     <span className="header__optionLineTwo">Orders</span>
                 </div>
                 <div className="header__optionBasket">
-                    <AddShoppingCartIcon />
+                    <Link to={"/user/cart"} ><AddShoppingCartIcon /></Link>
                     <span className="header__optionLineTwo header__basketCount">0</span>
                 </div>
             </div>
