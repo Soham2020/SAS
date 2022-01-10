@@ -32,13 +32,13 @@ export default function Header () {
 
                 <div className='home__row'>
                     {
-                        products.map(({ title, price, img }) => {
+                        products.map((product) => {
                             return(
                                 <Product 
-                                    title={title}
-                                    price={price}
-                                    img={img}
-                                />               
+                                    title={product.title}
+                                    price={product.price}
+                                    img={product.img}
+                                />           
                             )
                         })
                     }

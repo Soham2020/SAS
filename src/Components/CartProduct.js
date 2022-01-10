@@ -1,17 +1,26 @@
 import React from 'react';
+import { useStateValue } from '../StateProvider'
 import './CartProduct.css';
 
-function CartProduct () {
+function CartProduct ({ title, price, image }) {
+    const [ { cart }, dispatch ] = useStateValue();
+    const removeItem = () => {
+        // reomve from the cart
+        dispatch({
+            type: "REMOVE_FROM_CART",
+            title: title,
+        })
+    }
     return (
         <div className="cartProduct">
             <img
                 className="cartProduct__image"
-                src="https://m.media-amazon.com/images/I/61F7Xcyux0L._AC_SY200_.jpg"
+                src={image}
             />
             <div className="cartProduct__info">
-                <p className="checkProduct__name">LG</p>
-                <p className="checkProduct__price"><small>Rs. </small><strong>100</strong></p>
-                <button>Remove from Cart</button>
+                <p className="checkProduct__name">{ title }</p>
+                <p className="checkProduct__price"><small>Rs. </small><strong>{ price }</strong></p>
+                <button onClick={removeItem}>Remove from Cart</button>
             </div>
         </div>
     )

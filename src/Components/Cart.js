@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import jwt_decode from 'jwt-decode';
 import Navbar from "./Navbar";
 import './Cart.css';
 import Total from "./Total";
-import axios from "axios";
 import CartProduct from "./CartProduct";
+import { useStateValue } from "../StateProvider";
 
 export default function Cart(){
+    const [ { cart }, dispatch ] = useStateValue();
     return(
         <>
             <Navbar />
@@ -16,7 +16,17 @@ export default function Cart(){
                     <div>
                         <h2 className="checkout__title">Your Cart</h2>                        
                         {/* Cart products using map */}
-                        <CartProduct />
+                        {
+                            cart.map((item) => {
+                                return(
+                                    <CartProduct 
+                                        title= { item.title }
+                                        price={ item.price }
+                                        image= { item.img }
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
 
