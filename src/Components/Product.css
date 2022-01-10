@@ -18,9 +18,14 @@
       margin-bottom: 15px;
   }
   .product__price {
+      font-weight: 300;
       margin-top: 5px;
   }
+  .product__price > strong {
+      font-weight: 500;
+  }
   .product__info {
+      font-weight: 900;
       height: 100px;
       margin-bottom: 15px;
   }
