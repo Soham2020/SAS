@@ -4,8 +4,17 @@ import './Cart.css';
 import Total from "./Total";
 import CartProduct from "./CartProduct";
 import { useStateValue } from "../StateProvider";
+import jwt_decode from 'jwt-decode';
 
 export default function Cart(){
+    var isAuth = false;
+    var token = localStorage.getItem('tokenStore');
+    if(token) {
+        isAuth = true;
+        var decoded = jwt_decode(token);
+        var username = decoded.name;
+        console.log(username)
+    }
     const [ { cart }, dispatch ] = useStateValue();
     return(
         <>
