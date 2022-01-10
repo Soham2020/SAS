@@ -18,7 +18,11 @@ export const initialState = {
           ...state,
           cart: state.cart.filter(item => item.title !== action.title)
         }
-  
+      case "EMPTY_CART": 
+        return{
+          ...state,
+          cart: [] 
+        }
       default:
         return state;
     }

@@ -14,6 +14,11 @@ function Total () {
         setstripeToken(token);
     };
     console.log(stripeToken);
+    const handleClick = () => {
+        dispatch({
+            type: "EMPTY_CART"
+        })
+    }
     return(
         <div className='total'>
             <CurrencyFormat 
@@ -40,7 +45,7 @@ function Total () {
                 token={onToken}
                 stripeKey={process.env.REACT_APP_STRIPE}
             >
-                <button className='totalbtn'>Proceed to Checkout</button>
+                <button className='totalbtn' onClick={handleClick}>Proceed to Checkout</button>
             </StripeCheckout>
         </div>
     )

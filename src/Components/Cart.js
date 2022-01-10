@@ -13,26 +13,33 @@ export default function Cart(){
             
             <div className="checkout">
                 <div className="checkout__left">
-                    <div>
-                        <h2 className="checkout__title">Your Cart</h2>                        
-                        {/* Cart products using map */}
-                        {
-                            cart.map((item) => {
-                                return(
-                                    <CartProduct 
-                                        title= { item.title }
-                                        price={ item.price }
-                                        image= { item.img }
-                                    />
-                                )
-                            })
-                        }
-                    </div>
+                    {
+                        cart.length !== 0 ?
+                        <div>
+                            <h2 className="checkout__title">Your Cart: {cart.length} </h2>    
+                            {
+                                cart.map((item) => {
+                                    return(
+                                        <CartProduct 
+                                            title= { item.title }
+                                            price={ item.price }
+                                            image= { item.img }
+                                        />
+                                    )
+                                })
+                            }
+                        </div> : <div>
+                        <h2 className="checkout__title">Your Cart: 0</h2> 
+                        <h3>Order will be placed soon!</h3>
+                        </div>
+                    }
                 </div>
-
-            <div className="checkout__right">
-                    <Total />
-                </div>
+                {
+                    cart.length !== 0 ? 
+                    <div className="checkout__right">
+                        <Total />
+                    </div> : <div></div>
+                }
             </div>
         </>
     )
