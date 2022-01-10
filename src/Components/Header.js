@@ -38,6 +38,7 @@ export default function Header () {
                                     title={product.title}
                                     price={product.price}
                                     img={product.img}
+                                    id={product._id}
                                 />           
                             )
                         })
