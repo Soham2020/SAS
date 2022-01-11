@@ -1,0 +1,21 @@
+.item {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+}
+.item__title {
+    margin-right: 900px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.item__img {
+    display: flex;
+    margin-left: 50px;
+    width: 200px;
+    height: max-content;
+    padding: 25px;
+}
+.item__price {
+    padding: 100px;
+}
