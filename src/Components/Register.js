@@ -33,7 +33,7 @@ export default function Register () {
         <div className='login'>
             <img
                 className="login__logo"
-                src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' 
+                src='https://www.pngfind.com/pngs/m/607-6077306_sas-logo-black-and-white-sas-institute-hd.png' 
                 alt="amazon"
             />
 
