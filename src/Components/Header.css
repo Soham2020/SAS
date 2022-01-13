@@ -49,6 +49,7 @@
 }
 
 .header__optionLineOne .header__optionLineTwo {
+    cursor: pointer;
     font-size: 13px;
 }
 
