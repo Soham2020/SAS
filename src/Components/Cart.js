@@ -15,6 +15,13 @@ export default function Cart(){
         var username = decoded.name;
         console.log(username)
     }
+    const [ show, setShow ] = useState(false);
+    useEffect(() => {
+        if(cart.length == 0) {
+            const timer = setTimeout(() => setShow(true), 3000)
+            return () => clearTimeout(timer)
+        }
+    })
     const [ { cart }, dispatch ] = useStateValue();
     return(
         <>
@@ -38,8 +45,8 @@ export default function Cart(){
                                 })
                             }
                         </div> : <div>
-                        <h2 className="checkout__title">Your Cart: 0</h2> 
-                        <h3>Order will be placed soon!</h3>
+                        <h2 className="checkout__title">Your Cart: {cart.length}</h2> 
+                        { show ? <h3>Order will be placed soon!</h3> : <h3></h3>}
                         </div>
                     }
                 </div>
