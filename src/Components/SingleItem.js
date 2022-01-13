@@ -33,10 +33,17 @@ export default function SingleItem () {
             <img 
                 className="item__img"
                 src={item.img}
+                alt="item_img"
             />
-            <h3 className="item__price">
-                Rs. {item.price}
-            </h3>
+            <div className="item__price">
+                <h3>Description:</h3>
+                <p>
+                    6.1-inch (15.5 cm diagonal) Super Retina XDR display
+                    Ceramic Shield, tougher than any smartphone glass
+                    A14 Bionic chip, the fastest chip ever in a smartphone
+                </p>
+                <h3>Price: Rs. {item.price}</h3>
+            </div>
         </div>
         </>
     )
