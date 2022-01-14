@@ -43,6 +43,11 @@ export default function SingleItem () {
                 <h3>Price: Rs. {item.price}</h3>
             </div>
         </div>
+
+        {/* review section */}
+        <div className="review">
+            <h3>Reviews</h3>
+        </div>
         </>
     )
 }
