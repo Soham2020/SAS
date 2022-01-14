@@ -39,9 +39,6 @@ export default function SingleItem () {
                 <h3>Description:</h3>
                 <p>
                     {item.details}
-                    {/* 6.1-inch (15.5 cm diagonal) Super Retina XDR display
-                    Ceramic Shield, tougher than any smartphone glass
-                    A14 Bionic chip, the fastest chip ever in a smartphone */}
                 </p>
                 <h3>Price: Rs. {item.price}</h3>
             </div>
