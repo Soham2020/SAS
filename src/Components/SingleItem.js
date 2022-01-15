@@ -45,9 +45,6 @@ export default function SingleItem () {
         </div>
 
         {/* review section */}
-        <div className="review">
-            <h3>Reviews</h3>
-        </div>
         </>
     )
 }
