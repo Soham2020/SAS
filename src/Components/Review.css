@@ -1,6 +1,19 @@
+.header {
+    display: flex;
+    justify-content: left;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1500px;
+}
 .review {
     display: flex;
-    padding: 20px;
-    background-color: white;
-    height: max-content;
+    justify-content: left;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.589);
+    border-radius: 5px;
+}
+.review__container {
+    padding: 2px 16px;
 }
