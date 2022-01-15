@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
+import Review from "./Review";
 import './SingleItem.css';
 
 export default function SingleItem () {
@@ -45,6 +46,7 @@ export default function SingleItem () {
         </div>
 
         {/* review section */}
+        <Review />
         </>
     )
 }
