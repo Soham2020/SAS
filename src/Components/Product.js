@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useStateValue } from "../StateProvider";
 import './Product.css';
 
@@ -16,6 +18,7 @@ function Product ({ title, price, img, id }) {
                 id: id
             },
         });
+        toast("Added")
     }
     return(
         <div className="product">
@@ -31,6 +34,17 @@ function Product ({ title, price, img, id }) {
                 alt="p-img"
             />
             <button onClick={addToCart}>Add to Cart</button>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     )
 }
