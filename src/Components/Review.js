@@ -5,7 +5,7 @@ import './Review.css';
 export default function Review () {
     const [ feedback, setFeedback ] = useState([]);
     const getFeedback = async() => {
-        const res = await axios.get('https://sas-rest-api.herokuapp.com/api/feedback')
+        const res = await axios.get('https://sas-rest-api.herokuapp.com/api/feedback/get')
         setFeedback(res.data);
     }
     useEffect(() => {
