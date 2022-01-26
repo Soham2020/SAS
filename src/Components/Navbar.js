@@ -16,7 +16,7 @@ export default function Navbar(){
         <div className="header">
             <img 
                 className="header__logo"
-                src="https://www.pngfind.com/pngs/m/607-6077306_sas-logo-black-and-white-sas-institute-hd.png"
+                src="https://s3.amazonaws.com/thumbnails.venngage.com/template/fc8535df-be09-4c80-8ea5-a69a34b2318e.png"
             />
             <div className="header__search">
                 <input 
