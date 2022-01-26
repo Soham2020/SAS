@@ -30,7 +30,7 @@ export default function Navbar(){
                     <span className="header__optionLineOne" onClick={logout}>Logout</span>
                 </div>
                 <div className="header__option">
-                    <Link to={"/user/cart"} ><span className="header__optionLineTwo">Orders</span></Link>
+                    <Link to={"/user/cart"} style={{ textDecoration: 'none' }}><span className="header__optionLineTwo">Orders</span></Link>
                 </div>
                 <div className="header__optionBasket">
                     <Link to={"/user/cart"} ><AddShoppingCartIcon /></Link>
