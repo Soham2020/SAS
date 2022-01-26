@@ -13,7 +13,6 @@ function Total () {
     const onToken = (token) => {
         setstripeToken(token);
     };
-    console.log(stripeToken);
     const handleClick = () => {
         dispatch({
             type: "EMPTY_CART"
