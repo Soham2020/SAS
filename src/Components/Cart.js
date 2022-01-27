@@ -18,7 +18,7 @@ export default function Cart(){
     const [ show, setShow ] = useState(false);
     useEffect(() => {
         if(cart.length == 0) {
-            const timer = setTimeout(() => setShow(true), 30000)
+            const timer = setTimeout(() => setShow(true), 32000)
             return () => clearTimeout(timer)
         }
     })
