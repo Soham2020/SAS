@@ -1,4 +1,5 @@
 ### Supermarket automation software.
 
 # Tech-Stack
-MERN
+1. ReactJS
+2. Stripe Gateway
