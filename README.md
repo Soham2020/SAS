@@ -2,4 +2,4 @@
 
 # Tech-Stack
 1. ReactJS
-2. Stripe Gateway
+2. Stripe Gateway: For payment
