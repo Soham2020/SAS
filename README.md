@@ -4,3 +4,6 @@
 1. ReactJS
 2. Vanilla JS
 3. Stripe Gateway: For payment
+
+Improvement:
+1. Recommendation model
