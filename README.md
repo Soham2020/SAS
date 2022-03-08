@@ -6,4 +6,4 @@
 3. Stripe Gateway: For payment
 
 Improvement:
-1. Recommendation model
+1. Recommendation model using Artificial Intelligence
