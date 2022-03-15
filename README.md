@@ -7,3 +7,5 @@
 
 Improvement:
 1. Recommendation model using Artificial Intelligence
+
+If you like this project, please make sure that you should :star: this repo :)
