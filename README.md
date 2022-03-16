@@ -6,6 +6,6 @@
 3. Stripe Gateway: For payment
 
 Improvement:
-1. Recommendation model using Artificial Intelligence
+1. Recommendation model using Artificial Intelligence (Group Project)
 
 If you like this project, please make sure that you should :star: this repo :)
